@@ -1,3 +1,15 @@
+// Main application entry point.
+// Demonstrates the integration of multiple design patterns (Builder, Factory, Decorator, Strategy, Observer, Facade)
+// in an Online Food Ordering System.
+// The system flow:
+// 1. Factory selects the appropriate MealBuilder type.
+// 2. Builder constructs a full meal (main dish, drink, dessert).
+// 3. Decorator dynamically adds extra toppings and calculates total cost.
+// 4. Strategy defines the chosen payment method.
+// 5. Facade simplifies the overall ordering process.
+// 6. Observer notifies customers about order status updates.
+// This class serves as the orchestrator that ties all design patterns together.
+
 import builder.*;
 import factory.*;
 import strategy.*;
