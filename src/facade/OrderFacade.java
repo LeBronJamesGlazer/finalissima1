@@ -13,11 +13,13 @@ public class OrderFacade {
     }
 
     // Allow the user to choose a payment method
+
     public void setPaymentMethod(PaymentStrategy paymentStrategy) {
         this.paymentStrategy = paymentStrategy;
     }
 
     // Simplified method to place an order
+
     public void placeOrder(double price) {
         System.out.println("\n--- Starting Order Process ---");
 
