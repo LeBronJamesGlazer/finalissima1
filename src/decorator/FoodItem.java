@@ -1,6 +1,6 @@
 package decorator;
 
-// Общий интерфейс для еды
+// Common Interface
 public interface FoodItem {
     String getDescription();
     double getCost();

@@ -1,3 +1,7 @@
+// Product class in the Builder design pattern.
+// Represents the complex object being constructed — a complete meal.
+// Contains fields for the main dish, drink, and dessert, along with their respective setter methods.
+// The toString() method provides a formatted representation of the built meal.
 package builder;
 
 // Represents the complex meal object being built

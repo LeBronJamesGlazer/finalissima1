@@ -1,3 +1,6 @@
+// Concrete Observer class in the Observer design pattern.
+// Represents a customer who receives notifications about order status changes.
+// Implements the Observer interface and reacts to updates by printing status messages.
 package observer;
 
 // Concrete Observer — client

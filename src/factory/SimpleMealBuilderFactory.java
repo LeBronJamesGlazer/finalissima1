@@ -1,3 +1,7 @@
+// Concrete Factory class in the Factory design pattern.
+// Responsible for creating specific MealBuilder objects based on the provided meal type (e.g., Burger, Pizza, Vegan).
+// It encapsulates the object creation logic and returns the appropriate builder instance.
+// If an unknown type is provided, it defaults to ConcreteBuilderCustomMealBuilder.
 package factory;
 
 import builder.BInterfaceMealBuilder;

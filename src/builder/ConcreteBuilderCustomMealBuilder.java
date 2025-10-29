@@ -1,4 +1,7 @@
-// Component: ConcreteBuilderCustomMealBuilder
+// Concrete Builder class in the Builder design pattern.
+// Implements the BInterfaceMealBuilder interface to construct a customizable ProductMeal.
+// Provides default options for main dish, drink, and dessert, but can be modified for user preferences.
+// Demonstrates flexibility of the Builder pattern by allowing easy extension or customization of meal components.
 package builder;
 
 // Custom Meal Builder - builds a specific type of meal

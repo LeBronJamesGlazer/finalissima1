@@ -1,6 +1,6 @@
 package decorator;
-
-// Базовое блюдо, к которому можно добавлять декораторы
+// Basic component in the Decorator pattern.
+// Represents a simple meal item before any additional features (decorators) are added.
 public class BasicMeal implements decorator.FoodItem {
     private String description;
     private double cost;

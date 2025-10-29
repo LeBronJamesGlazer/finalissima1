@@ -19,22 +19,22 @@ public class Main {
         ProductMeal meal = director.constructMeal();
         System.out.println("\n[Builder] Meal constructed: " + meal);
 
-        // 3️⃣ Decorator — dynamically add extra toppings
+        // 3 Decorator — dynamically add extra toppings
         FoodItem decoratedMeal = new BasicMeal(meal.toString(), 8.99);
         decoratedMeal = new CheeseDecorator(decoratedMeal);
         decoratedMeal = new BaconDecorator(decoratedMeal);
         System.out.println("\n[Decorator] Customized meal: " + decoratedMeal.getDescription());
         System.out.println("[Decorator] Total price: $" + decoratedMeal.getCost());
 
-        // 4️⃣ Strategy — select a payment method
+        // 4 Strategy — select a payment method
         PaymentStrategy payment = new CreditCardPayment("1234-5678-9999", "Kazbek Akhmetov");
 
-        // 5️⃣ Facade — simplify the ordering process (uses Builder + Strategy)
+        // 5 Facade — simplify the ordering process (uses Builder + Strategy)
         OrderFacade orderFacade = new OrderFacade(director);
         orderFacade.setPaymentMethod(payment);
         orderFacade.placeOrder(decoratedMeal.getCost());
 
-        // 6️⃣ Observer — notify customers when order status changes
+        // 6 Observer — notify customers when order status changes
         OrderStatus orderStatus = new OrderStatus();
         Customer user1 = new Customer("LAMEKazbek");
         Customer user2 = new Customer("GOATDARYN");
@@ -45,7 +45,5 @@ public class Main {
         orderStatus.setStatus("Cooking");
         orderStatus.setStatus("Out for delivery");
         orderStatus.setStatus("Delivered");
-
-        System.out.println("\n=== ✅ DEMO COMPLETED SUCCESSFULLY ===");
     }
 }

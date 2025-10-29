@@ -1,3 +1,8 @@
+// Concrete Strategy class in the Strategy design pattern.
+// Implements the PaymentStrategy interface to process payments via PayPal.
+// Stores the user's email address used for PayPal transactions.
+// When pay() is called, it simulates sending a payment through the specified PayPal account.
+// Provides flexibility for clients to switch between different payment methods at runtime.
 package strategy;
 
 // Concrete strategy for PayPal payments
